@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <!-- <base href="/"> -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SampleLogin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   
+    <div ng-include="welcome.html"></div>
+
+    <div ng-controller="welcomeCtrl">
+    <div class="topnav">
+        <a href="#/login" ng-show="!isLoggedIn">Login</a>
+        <a href="#/home">Home</a>
+        <a href="#/aboutUs" ng-show="isLoggedIn">AboutUs</a>
+        <a href="#/contactUs" ng-show="isLoggedIn">ContactUs</a>
+       <a href="#/ourPolicy" ng-show="isLoggedIn">OurPolicy</a>
+       <div class="topnav-right">
+        <a href="" ng-show="isLoggedIn" ng-click="logout()">Logout</a>
+        </div>
+     
+    </div>
+    <br />
+
+
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular-route.js"></script>
+    <script src="app.js"></script>
+    <script src="app/login/login.js"></script>
+    <script src="app/welcome/welcome.js"></script>
+    <script src="app/main/main.js"></script>
+  </body>
+</html>

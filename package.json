@@ -1,0 +1,26 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "App with Gulp Build",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.8.0",
+    "angular-route": "^1.8.0",
+    "gulp-protractor": "^4.1.1"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.8.0",
+    "browser-sync": "^2.26.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "karma": "^5.1.0",
+    "karma-chrome-launcher": "^3.1.0",
+    "karma-jasmine": "^3.3.1",
+    "protractor": "^7.0.0"
+  }
+}
